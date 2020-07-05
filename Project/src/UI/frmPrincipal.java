@@ -142,6 +142,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         if(op == JOptionPane.OK_OPTION){
             this.usuario = null;
             this.projeto = null;
+            this.setTitle("Gerenciador de Projetos");
             itmLogin.setEnabled(true);
             itmLogout.setEnabled(false);
             itmExcluirProjeto.setEnabled(false);

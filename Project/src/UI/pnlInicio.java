@@ -39,6 +39,8 @@ public class pnlInicio extends javax.swing.JPanel {
         initComponents();
         //Verificar se é o gerente do projeto
         if(!(usuario.getID() == projeto.getGerente())) btnNovaFeito.setEnabled(false);
+        //Modificar nome do Frame
+        principal.setTitle("Gerenciador de Projetos - " + projeto.getNome());
         //Tornar paineis invisiveis
         pnlPFcard1.setVisible(false);
         pnlPFcard2.setVisible(false);
