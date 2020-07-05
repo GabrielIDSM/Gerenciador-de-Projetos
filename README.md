@@ -1,4 +1,6 @@
-# Gerenciador de Projetos (Hibernate / JPA)
+# Gerenciador de Projetos (Hibernate / PostgreSQL)
+
+![Snap](https://github.com/GabrielIDSM/Gerenciador-de-Projetos-Hibernate-Postgres/blob/master/Imagens/SnapPrincipal.png)
 
 ## Sobre o Projeto
 
