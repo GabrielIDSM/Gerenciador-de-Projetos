@@ -175,6 +175,10 @@ public class pnlNovaTarefaFeito extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cbcxItensActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbcxItensActionPerformed
+        btnConfirmar.setEnabled(true);
+    }//GEN-LAST:event_cbcxItensActionPerformed
+
+    private void btnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmarActionPerformed
         //Determina o objeto
         fazendo = fazendoList.get(cbcxItens.getSelectedIndex());
         //Efetua a inserção de dados
@@ -184,13 +188,6 @@ public class pnlNovaTarefaFeito extends javax.swing.JPanel {
             principal.ConfirmarLogin(usuario, projeto);
         }else{
             JOptionPane.showMessageDialog(principal, "Erro desconhecido", "Verifique a conexão com o banco de dados", JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_cbcxItensActionPerformed
-
-    private void btnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmarActionPerformed
-        int op = JOptionPane.showConfirmDialog(principal, "Deseja sair ?", "", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE);
-        if(op == JOptionPane.YES_OPTION){
-            principal.ConfirmarLogin(usuario, projeto);
         }
     }//GEN-LAST:event_btnConfirmarActionPerformed
 
